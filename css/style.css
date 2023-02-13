@@ -1,0 +1,60 @@
+#container{
+  box-sizing: border-box;
+  width: 500px;
+  height: 700px;
+  border: 1px solid black;
+  text-align: center;
+}
+header{
+  height: 20%;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  line-height: 140px;
+}
+.context{
+  height: auto;
+}
+footer{
+  background-color: black;
+  height: 11%;
+  color: white;
+  font-size: 30px;
+  line-height: 70px;
+}
+input{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  border: none;
+  border-bottom: 5px solid black;
+}
+button{
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3C3F3FFF;
+}
+button:hover{
+  background-color: #7C8080FF;
+}
+button:active{
+  background-color: #D54A56FF;
+}
+.accent_suc{
+  color: green;
+}
+.accent_up{
+  color: red;
+}
+.accent_down{
+  color: blue;
+}
