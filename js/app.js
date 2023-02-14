@@ -4,8 +4,7 @@ const input1 = document.querySelector("#input1");
 const butt1 = document.querySelector("#butt1")
 const butt2 = document.querySelector("#butt2");
 const result = document.querySelector("#result");
-
-butt1.onclick = function () {
+function Check() {
   if(input1.value > number){
     count++;
     result.innerHTML = "<div class='accent_down'>DOWN!</div>";
@@ -22,10 +21,16 @@ butt1.onclick = function () {
     document.querySelector("footer").innerText = `시도 횟수 : ${count}회`;
   }
 }
+butt1.onclick = Check;
 butt2.onclick = function () {
   number = Math.floor(Math.random() * 101);
   result.innerHTML = "RESTART";
   input1.value = 0;
   input1.focus();
   document.querySelector("footer").innerText = "시도 횟수 : 0회";
+}
+input1.onkeypress = (e) => {
+  if(e.key == "Enter"){
+    Check();
+  }
 }
